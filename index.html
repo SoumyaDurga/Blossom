@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Online flower shop</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" style="color: blueviolet;"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+        height="23" fill="currentColor" class="bi bi-flower2" viewBox="0 0 16 16">
+        <path
+          d="M8 16a4 4 0 0 0 4-4 4 4 0 0 0 0-8 4 4 0 0 0-8 0 4 4 0 1 0 0 8 4 4 0 0 0 4 4zm3-12c0 .073-.01.155-.03.247-.544.241-1.091.638-1.598 1.084A2.987 2.987 0 0 0 8 5c-.494 0-.96.12-1.372.331-.507-.446-1.054-.843-1.597-1.084A1.117 1.117 0 0 1 5 4a3 3 0 0 1 6 0zm-.812 6.052A2.99 2.99 0 0 0 11 8a2.99 2.99 0 0 0-.812-2.052c.215-.18.432-.346.647-.487C11.34 5.131 11.732 5 12 5a3 3 0 1 1 0 6c-.268 0-.66-.13-1.165-.461a6.833 6.833 0 0 1-.647-.487zm-3.56.617a3.001 3.001 0 0 0 2.744 0c.507.446 1.054.842 1.598 1.084.02.091.03.174.03.247a3 3 0 1 1-6 0c0-.073.01-.155.03-.247.544-.242 1.091-.638 1.598-1.084zm-.816-4.721A2.99 2.99 0 0 0 5 8c0 .794.308 1.516.812 2.052a6.83 6.83 0 0 1-.647.487C4.66 10.869 4.268 11 4 11a3 3 0 0 1 0-6c.268 0 .66.13 1.165.461.215.141.432.306.647.487zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+      </svg>Blossom</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <header class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="track.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+            </svg>Track order</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+            </svg>Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
+              <path
+                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z" />
+            </svg>About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg>Contact us</a>
+        </li>
+      </ul>
+
+    </header>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Enter flower name" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+          width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+        </svg>Search</button>
+    </form>
+    <a href="login.html"><button id="loginButton" type="button" class="btn btn-primary"><svg
+          xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle"
+          viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+          <path fill-rule="evenodd"
+            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+        </svg>Login
+      </button>
+    </a>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Annual Flowers
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Dahlia</a>
+            <a class="dropdown-item" href="#">Marigold</a>
+            <a class="dropdown-item" href="#">Snapdragon</a>
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Perennials Flowers
+          </a>
+          <ul class="dropdown-menu">
+            <a class="dropdown-item" href="#">Daylily</a>
+            <a class="dropdown-item" href="#">Coral bells</a>
+            <a class="dropdown-item" href="#">Lavender</a>
+
+          </ul>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Biennials
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Hollyhock</a>
+            <a class="dropdown-item" href="#">Black-eyed susan</a>
+            <a class="dropdown-item" href="#">Kalette</a>
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Occassion
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Festival</a>
+            <a class="dropdown-item" href="#">Parties</a>
+            <a class="dropdown-item" href="#">Anniversary</a>
+            <a class="dropdown-item" href="#">Bouquet</a>
+            <a class="dropdown-item" href="#">Gifts</a>
+
+          </div>
+        </li>
+    </div>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://source.unsplash.com/1400x400/?flower" style= "width:100%;height:100%;">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Welcome to Online Flower shop</h3>
+          <p>Choose according to your intrest.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1400x400/?rare flowers" style="width: 100%; height: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Do you know?</h3>
+          <p>There are over 300,000 different species of flowering plants in the world!.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1400x400/?beautiful flowers" style="width: 100%; height: 100%;">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Flower World</h3>
+          <p>Huge collection of different species.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  </a>
+  <hr>
+  <h1 class="animate__animated animate__heartBeat " style="text-align: center;">Best Offers</h1>
+  <div class="row row-cols-1 row-cols-md-5 g-4" style="padding:20px 20px 10px 20px">
+    <div class="col">
+      <div class="">
+
+        <img src="images/rose.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%; background-attachment:fixed ; --animate-repeat:5 1;" class="card-img-top"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Rose</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view1.html"><button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a id="like" class="fas fa-heart" onclick="myfunction()"></a>
+            <script>
+              function myfunction() {
+                document.getElementById("like").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" id="cart" class="fas fa-shopping-cart" onclick="myFun()"></a>
+            <script>
+              function myFun() {
+                document.getElementById("cart").span = 1;
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/Marigold.jpg" class="animate__animated animate__pulse " style="width: 100%; height: 100%;" ;
+          background-attachment:fixed ;class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Marigold</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view2.html"> <button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a href="#" id="liked" class="fas fa-heart" onclick="myfunction1()"></a>
+            <script>
+              function myfunction1() {
+                document.getElementById("liked").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/lilly.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%; background-attachment:fixed ;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Lilly</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view3.html"><button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a href="#" id="m" class="fas fa-heart" onclick="myfunctionm()"></a>
+            <script>
+              function myfunctionm() {
+                document.getElementById("m").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/lotus.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%; background-attachment:fixed ;" class=" card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Lotus</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view4.html"><button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a href="#" id="l" class="fas fa-heart" onclick="myfunctionl()"></a>
+            <script>
+              function myfunctionl() {
+                document.getElementById("l").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/snapdragon.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%; background-attachment:fixed ;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Snapdragon</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view5.html"> <button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a href="#" id="k" class="fas fa-heart" onclick="myfunctionk()"></a>
+            <script>
+              function myfunctionk() {
+                document.getElementById("k").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-5 g-4" style="padding:20px 20px 10px 20px">
+    <div class="col">
+      <div class="card">
+        <img src="images/jasmine.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%; background-attachment:fixed ;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Jasmine</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view6.html"><button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a id="j" class="fas fa-heart" onclick="myfunctionj()"></a>
+            <script>
+              function myfunctionj() {
+                document.getElementById("j").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/corabells.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%; background-attachment:fixed ;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Coralbells</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view7.html"><button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a id="i" class="fas fa-heart" onclick="myfunctioni()"></a>
+            <script>
+              function myfunctioni() {
+                document.getElementById("i").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/hibiscus.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%; background-attachment: fixed;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title" style="text-align:center">Hibiscus</h6>
+        </div>
+        <div class="card-footer">
+          <a href="view8.html"> <button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a id="h" class="fas fa-heart" onclick="myfunctionh()"></a>
+            <script>
+              function myfunctionh() {
+                document.getElementById("h").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/chrysanthemum.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%; background-attachment: fixed;" class=" card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Chrysanthemum</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view9.html"><button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a id="g" class="fas fa-heart" onclick="myfunctiong()"></a>
+            <script>
+              function myfunctiong() {
+                document.getElementById("g").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/Sunflower.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%;background-attachment: fixed;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Sunflower</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view10.html"><button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a id="f" class="fas fa-heart" onclick="myfunctionf()"></a>
+            <script>
+              function myfunctionf() {
+                document.getElementById("f").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-5 g-4" style="padding:20px 20px 10px 20px">
+    <div class="col">
+      <div class="card">
+        <img src="images/Dahlia.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%;background-attachment: fixed;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Dahlia</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view11.html"><button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a id="e" class="fas fa-heart" onclick="myfunctione()"></a>
+            <script>
+              function myfunctione() {
+                document.getElementById("e").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/hollyhock.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height:100%;background-attachment: fixed;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Hollyhock</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view12.html"><button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a id="d" class="fas fa-heart" onclick="myfunctiond()"></a>
+            <script>
+              function myfunctiond() {
+                document.getElementById("d").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/Lavender.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%;background-attachment: fixed;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Lavender</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view13.html"><button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a id="c" class="fas fa-heart" onclick="myfunctionc()"></a>
+            <script>
+              function myfunctionc() {
+                document.getElementById("c").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/DayLilly.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%;background-attachment: fixed;" class=" card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">DayLilly</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view14.html"> <button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a id="b" class="fas fa-heart" onclick="myfunctionb()"></a>
+            <script>
+              function myfunctionb() {
+                document.getElementById("b").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/Tulip.jpg" class="animate__animated animate__pulse "
+          style="width: 100%; height: 100%;background-attachment: fixed;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align:center">Tulip</h5>
+        </div>
+        <div class="card-footer">
+          <a href="view15.html"><button type="button" class="btn btn-primary">View</button></a>
+          <div class="icons" style="float:right">
+            <a id="a" class="fas fa-heart" onclick="myfunctiona()"></a>
+            <script>
+              function myfunctiona() {
+                document.getElementById("a").style.webkitTextFillColor = "red";
+              }
+            </script>
+            <a href="#" class="fas fa-shopping-cart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <footer class="footer" id="contact" style="background-color: black;">
+      <div class="box-container">
+        <div class="mainBox">
+          <div class="content">
+            <a href="#"><img src="images/logo.png" alt=""></a>
+            <h1 class="logoName" style="color: white;"> Blossom </h1>
+          </div>
+        </div>
+        <div class="box">
+          <h3 style="color: white;">Quick links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i>Home</a><br>
+          <a href="#"> <i class="fas fa-arrow-right"></i>product</a><br>
+          <a href="#"> <i class="fas fa-arrow-right"></i>blogs</a><br>
+          <a href="#"> <i class="fas fa-arrow-right"></i>review</a><br>
+          <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+        </div>
+        <div class="box">
+          <h3 style="color: white;">Extra links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i>Account info</a><br>
+          <a href="#"> <i class="fas fa-arrow-right"></i>order item</a><br>
+          <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a><br>
+          <a href="#"> <i class="fas fa-arrow-right"></i>payment method</a><br>
+          <a href="#"> <i class="fas fa-arrow-right"></i>our services</a>
+        </div>
+        <div class="box">
+          <h3 style="color: white;">Contact Info</h3>
+          <a href="#"> <i class="fas fa-phone"></i>+91 12222 34444</a>
+          <a href="#"> <i class="fas fa-envelope"></i>soumyadurga123@gmail.com</a>
+        </div>
+      </div>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+      <div class="credit">
+        <span style="color: white;"> Created by Miss Soumya Durga | all rights reserved !</span>
+      </div>
+    </footer>
+  </footer>
+  </div>
+  <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

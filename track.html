@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+    Track Order
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: black">
+
+<div class="container">
+  <h2 style="color: white;">Track Your Item</h2>
+  <form >
+    <div class="form-group">
+      <label for="email" style="color: white;">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd" style="color: white;">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="form-group">
+        <label for="trackid" style="color: white;">Track id:</label>
+        <input type="text" class="form-control" id="trackid" placeholder="Enter Track Id" name="trackid">
+      </div>
+    <div class="checkbox">
+      <label style="color: white;"><input type="checkbox" name="remember" > Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default" onclick="myFunction()">Submit</button>
+    <script>
+        function myFunction() {
+          confirm("Successfully Submited!");
+        }
+        </script>
+  </form>
+</div>
+</body>
+</html>
